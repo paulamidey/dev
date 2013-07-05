@@ -1,5 +1,18 @@
 class ChangeColNameToUsers < ActiveRecord::Migration
+
+validates :firstname, presence: true
   def change
   rename_column :users, :name, :firstname
   end
+
+def self.up
+    rename_column :users, :name, :firstname
+  end
+
+
+def self.up
+    rename_column :users, :firstname, :name
+  end
 end
+
+

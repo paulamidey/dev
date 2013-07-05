@@ -1,0 +1,4 @@
+class AddIdnoToPosts < ActiveRecord::Migration
+  def change
+  end
+end

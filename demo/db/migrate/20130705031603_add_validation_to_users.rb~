@@ -1,0 +1,8 @@
+class AddValidationToUsers < ActiveRecord::Migration
+
+def change
+  
+ validates(:firstname, {:presence=>true})
+end
+
+end

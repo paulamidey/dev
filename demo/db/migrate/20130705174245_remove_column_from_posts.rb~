@@ -1,0 +1,22 @@
+class RemoveColumnFromPosts < ActiveRecord::Migration
+  def change
+
+ remove-column :posts :employee :string
+ remove-column :posts :designation :string
+  end
+
+ def up
+
+ remove-column :posts :employee :string
+ remove-column :posts :designation :string
+  end
+
+
+  def down
+
+ add-column :posts :employee :string
+ add-column :posts :designation :string
+  end
+  
+
+end

@@ -1,5 +1,16 @@
 class AddLastnameToUsers < ActiveRecord::Migration
+
+ validates :firstname, presence: true
   def change
   add_column :users, :lastname ,:string
   end
+
+  def up
+  add_column :users, :lastname ,:string
+  end
+
+  def down
+  remove_column :users, :lastname ,:string
+  end
+  
 end
